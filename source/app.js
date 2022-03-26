@@ -328,17 +328,17 @@ function addCesiumEntities() {
         throw "The scene name is not correct!";
     }
     console.log("Loading Cesium entities for scene " + scene_name);
-    if (scene_name === 'EPFL') {
+    if (scene_name === 'Echendens') {
         // Load 3D tiles
         tileset = viewer.scene.primitives.add(
             new Cesium.Cesium3DTileset({
                 // TS token: old EPFL point cloud
                 // url: Cesium.IonResource.fromAssetId(176133),
                 // Group token: new point cloud from swisstopo
-                url: Cesium.IonResource.fromAssetId(651876),
+                url: Cesium.IonResource.fromAssetId(869970),
                 // url: 'http://localhost:8080/data_preprocess/'+ scene_name + '/pointCloud-tiles/tileset.json',
                 maximumScreenSpaceError: 0.5, // the important parameter
-                maximumMemoryUsage: 32768, // high value
+                maximumMemoryUsage: 32768, // high window
                 immediatelyLoadDesiredLevelOfDetail : true, //we only want to do a screenshot (not have approximate scene before)
                 loadSiblings : false,
              }));
@@ -374,7 +374,7 @@ function addCesiumEntities() {
 }
 
 function removeCesiumEntities() {
-    if (scene_name === 'EPFL') {
+    if (scene_name === 'Echendens') {
         tileset.destroy();
         viewer.scene.primitives.remove(tileset);
     } else {

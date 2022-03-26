@@ -33,4 +33,4 @@ npm install
 
 # install conda environment
 cd $SCRIPT_DIR
-conda env create -f environment.yml
+conda env create -f setup/environment.yml
