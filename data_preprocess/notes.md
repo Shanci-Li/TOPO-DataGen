@@ -5,7 +5,9 @@ This README introduces the pipeline to preprocess [**swisstopo** free geodata](h
 
 ## 0. Download raw data
 ```bash
-# we provide selected download links for an area of interest
+# Locate your target area in the swisstopo free geodata website and download the csv file from the webpage to data_preprocess folder
+# We recommand to paddle the target area when you choose by rectangle, e.g. if you are interested in a 3*3 area then choose 5*5 blocks centered on it.
+# we provide selected download scripts for an area of interest with given csv file
 export DATASET=demo
 python helper_download_from_csv.py $DATASET
 ```

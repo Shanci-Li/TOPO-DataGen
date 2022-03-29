@@ -335,7 +335,7 @@ function addCesiumEntities() {
                 // TS token: old EPFL point cloud
                 // url: Cesium.IonResource.fromAssetId(176133),
                 // Group token: new point cloud from swisstopo
-                url: Cesium.IonResource.fromAssetId(869970),
+                url: Cesium.IonResource.fromAssetId(900165),
                 // url: 'http://localhost:8080/data_preprocess/'+ scene_name + '/pointCloud-tiles/tileset.json',
                 maximumScreenSpaceError: 0.5, // the important parameter
                 maximumMemoryUsage: 32768, // high window
@@ -392,7 +392,9 @@ async function reloadCesiumEntities() {
 // TS token
 // Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxM2VjMjQ2YS1lNDFmLTQyYzQtOGY0MC02MzU5OGZkMzBmYjYiLCJpZCI6MzY2NjAsImlhdCI6MTYwMzg3NzAzNX0.rtRnq5-M_rmJCqUHjXWyWz7zsNaU66aH1-ME4qYJjlk';
 // Group token
-Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkODAzZDIxNi03OWE5LTQ4MDEtYjY1MS05NjRjYTUxYWY1NDEiLCJpZCI6NjIyODAsImlhdCI6MTYyNjg3NjU1OH0.HnC4hqaE96z02820ZD3UwwGFuSoTiJn7iUtH6G4cpII'
+// Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkODAzZDIxNi03OWE5LTQ4MDEtYjY1MS05NjRjYTUxYWY1NDEiLCJpZCI6NjIyODAsImlhdCI6MTYyNjg3NjU1OH0.HnC4hqaE96z02820ZD3UwwGFuSoTiJn7iUtH6G4cpII'
+Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJhMmI0ZTQ2ZC01YjdmLTRkZWUtOWJjNi03ZGYyNjUwYjg1NWQiLCJpZCI6ODQwNTEsImlhdCI6MTY0NjA2MjY5Mn0.6wW1t_orqlwVlLUSJ7wIt8dy4HbzkEhTqkAXStkHv2g'
+
 
 var viewer = new Cesium.Viewer('cesiumContainer', {
     requestRenderMode : true,
@@ -408,7 +410,7 @@ var viewer = new Cesium.Viewer('cesiumContainer', {
             preserveDrawingBuffer: true,
         },
     },
-});
+}); 
 
 
 //////////////////////////////////////////////////////////////////////////
